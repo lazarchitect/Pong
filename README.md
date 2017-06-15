@@ -14,3 +14,11 @@ Possible options for the future:
   -variable angles for the ball
   
   -moving the paddle can give the ball some "spin" and make it travel faster or alter its course
+  
+  -SFX for the ball hitting stuff or points being gained, or background music in general.
+  
+  -leaderboard?
+  
+  -ball hitting the side of the paddle bounces it up or down as it goes out (easy but useless)
+  
+  -paddle could have corner panels that make the ball faster when struck?
