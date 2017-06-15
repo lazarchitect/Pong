@@ -107,11 +107,11 @@ while(True):
 	# AI PADDLE MOVEMENT LOGIC. It's supposed to move slower than the player paddle because its smarter
 	if AIPaddle.centery > ball.centery:
 		pygame.draw.rect(screen, WHITE, AIPaddle)
-		AIPaddle.move_ip(0, -2)
+		AIPaddle.move_ip(0, -3)
 		
 	elif AIPaddle.centery < ball.centery:
 		pygame.draw.rect(screen, WHITE, AIPaddle)
-		AIPaddle.move_ip(0, 2)
+		AIPaddle.move_ip(0, 3)
 	
 	pygame.draw.rect(screen, BLACK, AIPaddle)
 
