@@ -17,8 +17,6 @@ Possible options for the future:
   
   -SFX for the ball hitting stuff or points being gained, or background music in general.
   
-  -leaderboard?
-  
   -ball hitting the side of the paddle bounces it up or down as it goes out (easy but useless)
   
   -paddle could have corner panels that make the ball faster when struck?
