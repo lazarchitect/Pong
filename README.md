@@ -22,3 +22,5 @@ Possible options for the future:
   -ball hitting the side of the paddle bounces it up or down as it goes out (easy but useless)
   
   -paddle could have corner panels that make the ball faster when struck?
+  
+  -popups appear in the field that affect the ball's speed or direction? like little boost/brake panels or bumpers
