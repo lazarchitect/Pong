@@ -24,7 +24,8 @@ WHITE = (255, 255, 255)
 
 
 pygame.init()
-TREBUCHET = pygame.font.SysFont("couriernew", 200)
+COURIER = pygame.font.SysFont("couriernew", 200)
+quitMsg = pygame.font.SysFont("couriernew", 24).render("Press q to quit", 0, (128, 100, 100))
 screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 x, y = screen.get_size()
 screen.fill(WHITE)
@@ -57,16 +58,16 @@ def reset_ball():
 
 def blitScores():
 	pygame.draw.rect(screen, WHITE, [int(x/5), 100, 700, 200])
-	screen.blit(TREBUCHET.render(str(player1Score), 0, GRAY), (int(x/5), 100))
+	screen.blit(COURIER.render(str(player1Score), 0, GRAY), (int(x/5), 100))
 	
 	pygame.draw.rect(screen, WHITE, [int(x*(4/5)), 100, 700, 200])
-	screen.blit(TREBUCHET.render(str(player2Score), 0, GRAY), (int(x*(4/5)), 100))
+	screen.blit(COURIER.render(str(player2Score), 0, GRAY), (int(x*(4/5)), 100))
 
 	#optional: make the score text change color based on how high the score is
 
 while(True):
 	pygame.display.flip()
-	screen.blit(pygame.font.SysFont("couriernew", 24).render("Press q to quit", 0, (128, 100, 100)), (10, 10))
+	screen.blit(quitMsg, (10, 10))
 
 	blitScores()
 	move_ball(ballMotionX, ballMotionY)
