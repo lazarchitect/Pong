@@ -66,6 +66,7 @@ def blitScores():
 
 while(True):
 	pygame.display.flip()
+	screen.blit(pygame.font.SysFont("couriernew", 24).render("Press q to quit", 0, (128, 100, 100)), (10, 10))
 
 	blitScores()
 	move_ball(ballMotionX, ballMotionY)
